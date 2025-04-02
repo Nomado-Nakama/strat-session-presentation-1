@@ -262,3 +262,51 @@ body {
     font-size: 1.2rem;
   }
 }
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .slide-content {
+    width: 95%;
+    padding: 1.5rem;
+  }
+  
+  .slide-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .slide-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Make tables scrollable on small screens */
+  .evaluation-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 0.9rem;
+  }
+  
+  /* Adjust navigation for easier tapping */
+  .navigation {
+    bottom: 1rem;
+    right: 1rem;
+  }
+  
+  .nav-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
+  /* Optionally adjust the slide container to allow vertical scrolling if content overflows */
+  .slide-container {
+    overflow-y: auto;
+  }
+  
+  /* Remove fixed background attachment for smoother scrolling */
+  body {
+    background-attachment: scroll;
+  }
+}
